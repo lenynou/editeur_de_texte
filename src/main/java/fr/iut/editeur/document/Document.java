@@ -30,7 +30,12 @@ public class Document {
         maj = maj.toUpperCase();
         remplacer(start, end, maj);
     }
-
+    public void effacer(int start, int end) {
+        remplacer(start, end, "");
+    }
+    public void clear(){
+        effacer(0, texte.length());
+    }
     @Override
     public String toString() {
         return this.texte;
