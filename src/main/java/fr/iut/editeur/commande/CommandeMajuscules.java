@@ -2,10 +2,10 @@ package fr.iut.editeur.commande;
 
 import fr.iut.editeur.document.Document;
 
-public class CommandeMajuscule extends CommandeDocument {
+public class CommandeMajuscules extends CommandeDocument {
 
 
-    public CommandeMajuscule(Document document, String[] parameters) {
+    public CommandeMajuscules(Document document, String[] parameters) {
         super(document, parameters);
     }
 
