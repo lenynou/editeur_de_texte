@@ -1,0 +1,17 @@
+name : workflow_test
+
+on: push
+
+jobs:
+
+  test-document:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: java
+        uses: actions/setup-java@v1
+        with:
+          java-version: 17
+      - name: exec test
+        run: mvn test
