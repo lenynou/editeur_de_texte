@@ -36,6 +36,12 @@ public class Document {
         maj = maj.toUpperCase();
         remplacer(start, end, maj);
     }
+    public void inserer(int start, String texte){
+        String fin = this.texte.substring(start);
+        effacer(start,  this.texte.length());
+        ajouter(texte);
+        ajouter(fin);
+    }
     public void effacer(int start, int end) {
         remplacer(start, end, "");
     }
